@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# for confidentiality reasons
+details.yaml
+CsecGmailBot-eddddc31c99c.json

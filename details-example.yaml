@@ -1,0 +1,18 @@
+# Please note, that in order to have this work you will also have to send an
+# invite from the google spreadsheet itself to the associated email that is
+# given through google development apis services.
+# example: data-tracker@torn-tracker.iam.gserviceaccount.com
+
+# This will be the path name to the *.json that google has provided you.
+# examples: 'torn-tracker-39d3ed6daeca.json'
+google_creds_path: ''
+# This will be the link to the spreadsheet you wish to access.
+# examples: 1u2jBkc35RWMYqCwXYRcHpgJGnSbgfRkjpbgYZYVsVbg
+google_sheets_key: ''
+
+# initialize each email as a string mapping to a dict
+# i.e. {'johndoe@jondoe.ca':{}}
+user_emails: {}
+# keep each problem id to a repsective week then sperate by commas
+# i.e. ['test,test2,test3','test4,test5,test6']
+problem_ids: []
