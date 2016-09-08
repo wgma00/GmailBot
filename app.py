@@ -67,9 +67,9 @@ class SpreadSheetTracker(object):
             gspread.SpreadsheetNotFound  
         """
         scope = ['https://spreadsheets.google.com/feeds']
-        credentials = ServiceAccountCredentials.from_json_keyfile_name(self.google_creds_path, self.scope)
-        gc = gspread.authorize(self.credentials)
-        self.wks = self.gc.open_by_key(self.google_sheets_key).sheet1
+        credentials = ServiceAccountCredentials.from_json_keyfile_name(self.google_creds_path, scope)
+        gc = gspread.authorize(credentials)
+        self.wks = gc.open_by_key(self.google_sheets_key).sheet1
 
     def updateUserbase(self):
         """ Updates the local database with the entries on the spreadsheet.
