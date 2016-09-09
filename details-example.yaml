@@ -10,9 +10,9 @@ google_creds_path: ''
 # examples: 1u2jBkc35RWMYqCwXYRcHpgJGnSbgfRkjpbgYZYVsVbg
 google_sheets_key: ''
 
-# initialize each email as a string mapping to a dict
-# i.e. {'johndoe@jondoe.ca':{}}
-user_emails: {}
 # keep each problem id to a repsective week then sperate by commas
 # i.e. ['test,test2,test3','test4,test5,test6']
 problem_ids: []
+
+# userbase object that  stores what every user had done
+userbase: {}
